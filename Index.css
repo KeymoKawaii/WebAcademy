@@ -1,0 +1,684 @@
+@font-face
+{
+    font-family:"Roboto";
+    src: url('Roboto');
+}
+@keyframes slider{ /*Animation du Slider*/
+	0%{
+		transform: translateX(0px);
+	}
+	40%{
+		transform: translateX(0px);
+	}
+	50%{
+		transform: translateX(-1600px);
+
+	}
+	90%{
+		transform: translateX(-1600px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+}
+body
+{
+	font-family: 'Roboto', sans-serif;
+}
+header /*Traitement du Header*/
+{
+	font-family:'Roboto', Arial, sans-serif;
+	
+}
+	.menu /*Menu Comprennant le Logo et la navigation*/
+	{
+		display: flex;
+		background-color: white;
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 6em;
+		flex-direction: row; 	
+		justify-content: space-around; 	
+		align-items: center; 	
+		border-bottom: 1px solid #e5e5e5; 
+		text-align: center;	
+	}
+	.menu a
+	{
+		color: black;
+
+	}
+	.HoverMenu1
+	{
+		height: 5px;
+		width: 80px;
+		background-color: #30a2bf;
+		position: relative;
+		bottom: 40px;
+		right:50px;
+		margin-left: -15px;
+		visibility: hidden;
+	}
+	.HoverMenu2
+	{
+		height: 5px;
+		width: 80px;
+		background-color: #30a2bf;
+		position: relative;
+		bottom: 40px;
+		right:50px;
+		margin-left: -15px;
+		visibility: hidden;
+	}
+	.HoverMenu3
+	{
+		height: 5px;
+		width: 80px;
+		background-color: #30a2bf;
+		position: relative;
+		bottom: 40px;
+		right:50px;
+		margin-left: -15px;
+		visibility: hidden;
+	}
+	.HoverMenu4
+	{
+		height: 5px;
+		width: 80px;
+		background-color: #30a2bf;
+		position: relative;
+		bottom: 40px;
+		right:50px;
+		margin-left: -15px;
+		visibility: hidden;
+	}
+	.LienHoverMenu1:hover + .HoverMenu1
+	{
+	    visibility: visible;
+	}
+	.LienHoverMenu2:hover + .HoverMenu2
+	{
+	    visibility: visible;
+	}
+	.LienHoverMenu3:hover + .HoverMenu3
+	{
+	    visibility: visible;
+	}
+	.LienHoverMenu4:hover + .HoverMenu4
+	{
+	    visibility: visible;
+	}
+		.logo
+		{
+			width:250px; 
+			height:auto;
+			padding-left: 10%;
+			padding-top: 1%;
+			padding-bottom: 1%;
+		}
+		nav
+		{
+			padding-left: 20%;
+			margin-top: 0em;
+			top: 0;
+		}
+		nav ul
+		{
+			display: flex;
+			list-style-type: none;
+			position: relative;
+			padding-top: 0;
+			top: 0;
+			padding-right: -40px;
+		}
+		.LienHoverMenu1
+		{
+			margin-left:5px;
+			position: relative;
+		}
+	.slider /* Partie du Slider, contient le slider, les boutons de celui-ci et le texte de présentation*/ 
+	{
+		width: auto;
+		margin:auto;
+		overflow: hidden;
+	}
+		.slides
+		{
+			width: 100%;
+			box-sizing: border-box;
+			animation: slider 15s infinite;
+			display: flex;
+		}
+		.slide
+		{
+			width: 100%;
+		}
+		.fleche
+		{
+			width: 30px;
+			height: 30px;
+			padding-top: 17px;
+		}
+		.boutongauche
+		{
+			margin-top:270px;
+			z-index: 25;
+			padding-right:10px;
+			position: absolute;
+			background-color:#444348;
+			opacity: 0.80;
+			height: 65px;
+			max-width: 40px;
+			border-radius:0px 35px 35px 0px;
+		}
+		.boutondroit
+		{
+			margin-top:270px;
+			z-index: 25;
+			padding-left:10px;
+			position: absolute;
+			right: 0;
+			margin-right: 8px;
+			background-color:#444348;
+			opacity: 0.80;
+			height: 65px;
+			max-width: 40px;
+			border-radius: 35px 0px 0px 35px;
+		}
+		.presentation
+		{
+			position: absolute; 
+			z-index: 1;
+			color: white;
+			max-width: 43%;
+			word-wrap: break-word;
+			margin-left: 70px;
+			padding-top: 200px;
+		}
+			strong
+			{
+				color: #30a2bf;
+			}
+			a
+			{
+				text-decoration: none;
+				color: white;
+			}
+			.Plusinfos
+			{
+				background-color: #30a2bf;
+				width: 20%;
+				height: auto;
+				text-align: center;
+				padding-top: auto;
+				border-radius: 5px 5px 5px 5px;
+				box-shadow: 0px 0px 9px 0px #1d7991;
+			}
+
+section /*Section  des Services*/
+{
+	text-align: center;
+	margin-top: 0.3em;
+	margin: auto;
+}
+section h3 /*Margin auto des titres*/
+{
+	margin: auto;
+}
+	.puce /*Tailles des puces bleus*/
+	{
+		height: 15px;
+		width: auto;
+	}
+	.MillieuSection /* Toute la partie "rendu web" + texte*/
+	{
+		display: flex;
+		justify-content: center;
+	}
+	.Mac
+	{
+		width:500px; 
+		height:320px;
+	}
+	.MillieuSectionTexte
+	{
+		text-align: left;
+		max-width: 50%;
+		padding-left: 70px;
+		position: relative;
+	}
+			.icone
+			{
+				height: 50px;
+				left: -75px;
+				top: 75px; 
+				position: relative;
+			}
+
+			.puces
+			{
+				display: inline-block;
+				margin: auto;
+			}
+.Section2 /* Partie Portfolio*/
+{
+	background-color: #f5f5f5;
+	text-align: center;
+}
+	#Portfolio
+	{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.puceblanche
+	{
+		text-align: center;
+		height:100px;
+		width:100px;
+		position: relative;
+		z-index: 0;
+		margin-top: -65px;
+		margin-bottom: -35px;
+	}
+	.LiensMenuPortfolio /* Menu de navigation du portfolio*/
+	{
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		text-decoration: none;
+	}
+		ul
+		{
+			list-style-type: none;
+			border-radius: 2px 2px 2px 2px #e5e5e5;
+		}
+
+		.PucePortfolio1
+		{
+			padding-top: 10px;
+			background-color: #e5e5e5;
+			height: 30px;
+			width: 100px;
+			color: grey;
+			margin-right: -16px;
+		}
+		.PucePortfolio2
+		{
+			padding-top: 10px;
+			background-color: #e5e5e5;
+			height: 30px;
+			width: 100px;
+			color: grey;
+			margin-right: -16px;
+		}
+		.PucePortfolio3
+		{
+			padding-top: 10px;
+			background-color: #e5e5e5;
+			height: 30px;
+			width: 100px;
+			color: grey;
+			margin-right: -16px;
+		}
+		.PucePortfolio4
+		{
+			padding-top: 10px;
+			background-color: #e5e5e5;
+			height: 30px;
+			width: 100px;
+			color: grey;
+			margin-right: -16px;
+		}
+		.PucesPortfolio
+		{
+			display: flex;
+			justify-content: center;
+			padding-left: 125px;
+
+		}
+		.hoverlist1
+		{
+			padding-top:37px;
+			visibility: hidden;
+			right: 40px;
+			position: relative;
+			
+		}
+		.hoverlist2
+		{
+			padding-top:37px;
+			right: 40px;
+			position: relative;
+			visibility: hidden;
+		}
+		.hoverlist3
+		{
+			padding-top:37px;
+			right: 40px;
+			position: relative;
+			visibility: hidden;
+		}
+		.hoverlist4
+		{
+			padding-top:37px;
+			right: 40px;
+			position: relative;
+			visibility: hidden;
+		}
+		.PucePortfolio1:hover
+		{
+			background-color: #30a2bf;
+			color: white;
+		}
+		.PucePortfolio2:hover
+		{
+			background-color: #30a2bf;
+			color: white;
+		}
+		.PucePortfolio3:hover
+		{
+			background-color: #30a2bf;
+			color: white;
+		}
+		.PucePortfolio4:hover
+		{
+			background-color: #30a2bf;
+			color: white;
+		}
+		.PucePortfolio1:hover + .hoverlist1
+		{
+			visibility: visible ;
+		}
+		.PucePortfolio2:hover + .hoverlist2
+		{
+			visibility: visible ;
+		}
+		.PucePortfolio3:hover + .hoverlist3
+		{
+			visibility: visible ;
+		}
+		.PucePortfolio4:hover + .hoverlist4
+		{
+			visibility: visible ;
+		}
+	.Portfolio /*Photos du Portfolio*/
+	{
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+			.container 
+			{
+ 	 		position: relative;
+  			width: 300px;
+  			margin: 0.5%;
+			}
+
+			.image 
+			{
+  			display: block;
+ 			width: 100%;
+  			height: auto;
+			}
+
+			.overlay 
+			{
+  			position: absolute;
+  			top: 1;
+  			bottom: 0;
+  			left: 0;
+  			right: 0;
+  			height: 50%;
+  			width: 100%;
+  			opacity: 0;
+  			transition: .5s ease;
+  			background-color: black;
+  			width: 300px;
+  			display: flex;
+			}
+
+			.container:hover .overlay 
+			{
+			  opacity: 0.75;
+			}
+			.text
+			{
+			  color: white;
+			  font-size: 20px;
+			  position: absolute;
+			  top: 15%;
+			  left:5%;
+			}
+			.oeil
+			{
+				position: absolute;
+				z-index: 20;
+				width: 100px;
+				padding-left:215px;
+				top: -35px;
+			}
+footer
+{
+	display: flex;
+}
+	.Maps /*Fond avec la carte Google Maps*/
+	{
+		width: 100%;
+		height: 600px;
+		position: relative;
+		z-index: 0;
+	}
+	.fondbleu
+	{
+		background-color: #30a2bf;
+		position: absolute;
+		width: 100%;
+		height: 600px;
+		z-index: 1;
+		opacity: 0.3;
+	}
+	.Formulaire /*Formulaire de contact*/
+	{
+		z-index: 2;
+		position: absolute;
+		background-color: #f5f5f5;
+		opacity: 0.85;
+		padding-bottom: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: 55%;
+		margin-top: 3%;
+		border: 1px #30a2bf solid;
+	}
+	a
+	{
+		text-decoration: none;
+		color: white;
+	}
+	.LienContact
+	{
+		background-color: #30a2bf;
+		width: 35%;
+		height: 25px;
+		text-align: center;
+		padding-top: 10px;
+	}
+
+@media all and (min-width: 480px) and (max-width: 960px)/*Responsive format tablette*/
+{
+	.logo   /*Adapatation du Menu pour rendre le menu plus lisible*/
+		{
+			width: 200px;
+			height: auto;
+			position: absolute;
+			padding-bottom:60px;
+			padding-right: 75px;
+		}
+		.slide
+		{
+			text-align: center;
+		}
+		nav
+		{
+			margin: auto;
+		}
+		.LienHoverMenu1
+		{
+			padding-top: 15px;
+		}
+		.LienHoverMenu2
+		{
+			padding-top: 15px;
+		}
+		.LienHoverMenu3
+		{
+			padding-top: 15px;
+		}
+		.LienHoverMenu4
+		{
+			padding-top: 15px;
+		}
+	.boutongauche
+	{
+		display: none;
+	}
+	.boutondroit
+	{
+		display: none;
+	}
+	.Mac	/*Adaptation de la section "Services" pour rendre le design vertical*/
+	{
+		margin: auto;
+	}
+	.MillieuSection
+		{
+			flex-direction: column;
+		}
+			.MillieuSectionTexte
+			{
+				text-align: center;
+				margin: auto;
+				padding-left: 0;
+			}
+			.icone
+			{
+				display: none;
+			}
+			 section h3
+			{
+			color: #30a2bf;
+			}
+}
+@media screen and (max-width: 479px) /*Adaptation du Design au responsive smartphone*/
+{
+	.menu /*Adapatation du Menu en static*/
+	{
+		position: static;
+	}
+		.logo
+		{
+			max-width: 100%;
+			height: auto;
+			position: absolute;
+			padding-bottom:60px;
+			padding-right: 75px;
+		}
+		nav
+		{
+			margin-right: 35%;
+		}
+		.LienHoverMenu4
+		{
+			padding-top: 25px;
+		}
+		.LienHoverMenu3
+		{
+			padding-top: 25px;
+		}
+		.LienHoverMenu2
+		{
+			padding-top:25px;
+		}
+		.LienHoverMenu1
+		{
+			display: none;
+		}
+	.boutongauche
+	{
+		display: none;
+	}
+	.boutondroit
+	{
+		display: none;
+	}
+	.slider
+	{
+
+	}
+	.slide
+	{
+		display: none;
+	}
+
+	.presentation
+	{
+		position: static;
+		color: black;
+		width: 100%;
+		text-align: center;
+		margin: auto;
+		padding-top: 50px;
+		border-bottom: 5px #30a2bf solid;
+		word-wrap: normal;
+	}
+		.Plusinfos
+		{
+			display: none;
+		}
+	.Mac /*Adaptation de la section "Services" pour rendre le design vertical*/
+	{
+		margin: auto;
+		width: 100%;
+		height: 300px;
+	}
+	.MillieuSection
+		{
+			flex-direction: column;
+		}
+			.MillieuSectionTexte
+			{
+				text-align: center;
+				margin: auto;
+				padding-left: 0px;
+			}
+			.icone
+			{
+				display: none;
+			}
+		 section h3
+		{
+			color: #30a2bf;
+		}
+
+footer
+{
+	flex-direction: column;
+
+	}	.Maps /*Adaptation du footer et alignement vertical de la carte*/
+	{
+		position: static;
+	}
+	.Formulaire
+	{
+		margin: auto;
+		width: 100%;
+		opacity: 1;
+		position: static;
+	}
+}
